@@ -1,0 +1,99 @@
+.tableWrapper .titleBox{
+  padding: 10px 20px;
+}
+
+.tableWrapper .titleBox h2{
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.tableWrapper .titleBox h2 span{
+  color: #f78f00;
+}
+
+.tableWrapper table{
+  margin: 10px auto;
+}
+
+.tableWrapper table thead{
+  color: #fff;
+  background: #34495e;
+}
+
+.tableWrapper table thead tr th{
+  border: 1px solid #2c3e50;
+  padding: 5px;
+  font-weight: 400;
+}
+
+.tableWrapper table tbody tr td{
+  padding: 10px 42px;
+  border: 1px solid #2c3e50;
+}
+
+.tableWrapper table tbody tr td .actionBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+} 
+
+.tableWrapper table tbody tr td .actionBox .icon svg{
+  color: #34495e;
+  cursor: pointer;
+}
+
+.tableWrapper table tbody tr td .actionBox .icon svg:hover{
+  color: #f78f00;
+}
+
+.tableWrapper table tbody tr td .actionBox .icon1 svg{
+  width: 17px;
+  height: 17px;
+}
+
+.tableWrapper table tbody tr td .actionBox .icon2 svg{
+  width: 21px;
+  height: 21px;
+}
+
+@media only screen and (min-width: 1084px) and (max-width: 1285px) {
+  .tableWrapper table tbody tr td{
+    padding: 12px 26px;
+  }
+}
+
+@media only screen and (min-width: 930px) and (max-width: 1083px) {
+  .tableWrapper table tbody tr td{
+    padding: 12px 14px;
+  }
+}
+
+@media only screen and (min-width: 815px) and (max-width: 929px) {
+  .tableWrapper table{
+    width: 200px;
+  }
+  .tableWrapper table tbody tr td{
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 814px){
+  .tableWrapper table{
+     display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .tableWrapper .titleBox h2{
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 681px){
+  .tableWrapper .titleBox h2{
+    font-weight: 500;
+    font-size: 24px;
+  }
+}

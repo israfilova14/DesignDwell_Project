@@ -1,0 +1,70 @@
+.userBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userBox .updateUserModal{
+  border: 1px solid #2c3e50;
+  width: 400px;
+  padding: 10px;
+  position: relative;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.userBox .updateUserModal .close_{
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+.userBox .updateUserModal .close_ svg{
+  font-size: 21px;
+  color: #2c3e50;
+}
+
+.userBox .updateUserModal h2{
+  font-weight: 500;
+  font-size: 23px;
+  color: #229954;
+}
+
+.userBox .updateUserModal .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userBox .updateUserModal .row input{
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.userBox .updateUserModal .row svg{
+  color: #2c3e50;
+}
+
+.userBox .updateUserModal .select{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.userBox .updateUserModal .select select{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.userBox .updateUserModal button{
+  border: none;
+  color: #fff;
+  width: 130px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #229954;
+  font-size: 15px;
+}

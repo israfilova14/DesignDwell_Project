@@ -1,0 +1,90 @@
+.allProductsWrapper .headerWrapper{
+  height: 60px;
+  background: #f2f3f4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 1px solid #2c3e50;
+}
+
+.allProductsWrapper .headerWrapper h2{
+  font-weight: 500;
+  font-size: 23px;
+  color: #2c3e50;
+}
+
+.allProductsWrapper .headerWrapper button{
+  border: none;
+  padding: 7px 10px;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.allProductsWrapper .headerWrapper button:hover{
+  border: 2px solid #f78f00;
+}
+
+.allProductsWrapper .adminProductCardWrapper{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.allProductsWrapper .paginationWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.allProductsWrapper .paginationWrapper .paginationButton{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #34495e;
+}
+
+.allProductsWrapper .paginationWrapper .active{
+  background: #f78f00;
+}
+
+@media only screen and (max-width: 1136px) {
+  .allProductsWrapper .adminProductCardWrapper{
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 924px){
+  .allProductsWrapper .paginationWrapper{
+     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 900px){
+  .allProductsWrapper .adminProductCardWrapper .adminProductCard{
+    width: 160px;
+    height: 260px;
+  }
+  
+  .allProductsWrapper .adminProductCardWrapper .adminProductCard img{
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover;
+  }
+}

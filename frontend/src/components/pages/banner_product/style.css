@@ -1,0 +1,80 @@
+.bannerProductWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.bannerProductWrapper .container{
+  width: 84.5%;
+}
+
+.bannerProductWrapper .container .background{
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+  height: 600px;
+  width: 100% !important;
+}
+
+.bannerProductWrapper .container .banner1{
+  background: url('../../../images/banner-1.webp');
+  background-position: center;
+}
+
+.bannerProductWrapper .container .banner2{
+  width: 100%;
+  background: url('../../../images/banner-2.webp');
+}
+
+.bannerProductWrapper .container .banner3{
+  background: url('../../../images/banner-3.webp');
+  background-position: center;
+}
+
+.bannerProductWrapper .container .banner4{
+  background: url('../../../images/banner-4.jpeg');
+  background-position: center;
+}
+
+.bannerProductWrapper .container .banner5{
+  background: url('../../../images/banner-5.webp');
+  background-position: center;
+}
+
+.bannerProductWrapper .loadingBox{
+  width: 84.5%;
+  height: 500px;
+  background: #f2f3f4;
+}
+
+@keyframes pulse{
+   0% {
+     transform: scale(1);
+     opacity: 1;
+   }
+   50% {
+     transform: scale(1.01);
+     opacity: 0.7;
+   }
+   100% {
+     transform: scale(1);
+     opacity: 1;
+   }
+}
+
+ @media only screen and (min-width: 641px) and (max-width: 1007px) {
+  .bannerProductWrapper .container .background{
+    height: 400px;
+    width: 100% !important;
+    background-position: center;
+  }
+ }
+
+ @media only screen and (max-width: 640px) {
+  .bannerProductWrapper .container .background{
+    height: 400px;
+    width: 100%;
+    background-position: center;
+  }
+ }

@@ -1,0 +1,23 @@
+async function userLogout(req, res) {
+  try{
+    // Clear the token cookie
+    res.clearCookie("token");
+
+    // Send success response
+    return res.status(200).json({
+      message: "Logged out successfully",
+      error: false,
+      success: true,
+      data: []
+      })  
+    }
+    catch(err){
+        console.error("Logout error:", err);
+        return res.status(500).json({
+          message: "An error occured during logout",
+          error: true,
+          success: false
+        })
+    }
+}
+module.exports = userLogout

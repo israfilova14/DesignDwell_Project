@@ -1,0 +1,121 @@
+.adminPanelWrapper{
+  width: 100%;
+  display: flex;
+}
+
+.adminPanelWrapper aside{
+  height: 119vh;
+  flex: 0.2;
+  background: #f2f3f4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid #f2f3f4;
+}
+
+.adminPanelWrapper aside .adminLogoWrapper{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.adminPanelWrapper aside .adminLogoWrapper img{
+  width: 100px;
+  mix-blend-mode: multiply !important;
+}
+
+.adminPanelWrapper aside .aboutAdmin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.adminPanelWrapper aside .aboutAdmin p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.adminPanelWrapper aside .aboutAdmin .role{
+  text-transform: uppercase;
+}
+
+.adminPanelWrapper aside .navigationBox nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.adminPanelWrapper aside .navigationBox nav .link-box{
+  background: #f78f00;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.adminPanelWrapper aside .navigationBox nav .link-box:hover{
+  background: #e67e22;
+}
+
+.adminPanelWrapper aside .navigationBox nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.adminPanelWrapper main{
+  flex: 0.8;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .adminPanelWrapper aside{
+    flex: 0.5;
+  }
+  .adminPanelWrapper main{
+    flex: 0.5;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 681px) {
+  .adminPanelWrapper aside{
+    flex: 0.4;
+  }
+  .adminPanelWrapper main{
+    flex: 0.6;
+  }
+}
+
+@media only screen and (min-width: 682px) and (max-width: 900px){
+  .adminPanelWrapper aside{
+    flex: 0.3;
+  }
+  .adminPanelWrapper main{
+    flex: 0.7;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1025px){
+  .adminPanelWrapper aside{
+    flex: 0.3;
+  }
+  .adminPanelWrapper main{
+    flex: 0.7;
+  }
+}
+
+@media only screen and (min-width: 1026px){
+  .adminPanelWrapper aside{
+    flex: 0.2;
+  }
+  .adminPanelWrapper main{
+    flex: 0.8;
+  }
+}

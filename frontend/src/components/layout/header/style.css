@@ -1,0 +1,239 @@
+.headerWrapper header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: #2c3e50;
+}
+
+.headerWrapper header .logoBox{
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerWrapper header .logoBox a{
+    text-decoration: none;
+}
+
+.headerWrapper header .logoBox a h2{
+    font-weight: 600;
+    font-size: 28px;
+    color: #f78f00;
+}
+
+.headerWrapper header .searchBox{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerWrapper header .searchBox .search{
+    background: #f2f3f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid #273746;
+}
+
+.headerWrapper header .searchBox .search .searchIconBox{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 9px;  
+    border-bottom-right-radius: 9px;
+    background: #f78f00;
+}
+
+.headerWrapper header .searchBox .search input{
+    background: #f2f3f4;
+    border: none;
+    outline: none;
+    width: 320px;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.headerWrapper header .searchBox .search svg{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.headerWrapper header .searchBox .search input::placeholder{
+    font-size: 15px;
+    color: #000;
+}
+
+.headerWrapper header .iconsBox{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.headerWrapper header .iconsBox .icon{
+    position: relative;
+}
+
+.headerWrapper header .iconsBox .icon .countBox{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #229954;
+    position: absolute;
+    top: -9px;
+    right: -9px;
+}
+
+.headerWrapper header .iconsBox .icon .countBox span{
+    font-weight: 600;
+    color: #fff;
+}
+
+.headerWrapper header .iconsBox .admin_panel{
+    position: relative;
+}
+
+.headerWrapper header .iconsBox .pop_up{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f3f4;
+    cursor: pointer;
+}
+
+.headerWrapper header .iconsBox .pop_up a{
+    color: #3f3f3f;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.headerWrapper header .iconsBox .icon_ {
+    background: #f78f00;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.headerWrapper header .iconsBox .icon_:hover{
+    background: #e67e22;
+}
+
+.headerWrapper header .iconsBox .icon_ svg{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.headerWrapper header .iconsBox .btnBox button{
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #f78f00;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.headerWrapper header .iconsBox .btnBox button:hover{
+    background: #e67e22;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1090px) {
+    .headerWrapper header .searchBox .search{
+        width: 400px;
+    }
+
+    .headerWrapper header .searchBox .search input{
+        width: 290px;
+    }
+}
+
+@media only screen and (max-width: 948px) {
+    .headerWrapper header .iconsBox .pop_up{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 949px) {
+    .headerWrapper header{
+        padding: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .headerWrapper header .searchBox .search{
+        width: 420px;
+    }
+
+    .headerWrapper header .searchBox .search input{
+        width: 290px;
+    }
+
+    .headerWrapper header .logoBox h2{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .headerWrapper header{
+        padding: 10px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headerWrapper header .searchBox{
+        display: none;
+    }
+    
+    .headerWrapper header .iconsBox .icon_ {
+        width: 30px;
+        height: 30px;
+    }
+
+    .headerWrapper header .iconsBox .icon_ svg{
+        font-size: 17px;
+    }
+
+    .headerWrapper header .logoBox h2{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .headerWrapper header .iconsBox .icon .countBox{
+        width: 20px;
+        height: 20px;
+    }
+
+    .headerWrapper header .iconsBox{
+        gap: 20px;
+    }
+    .headerWrapper header .iconsBox .btnBox button{
+        padding: 7px;
+    }
+}

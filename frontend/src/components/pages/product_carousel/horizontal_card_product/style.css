@@ -1,0 +1,232 @@
+.horizontalCardWrapper{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding-top: 24px;
+}
+
+.horizontalCardWrapper .container{
+   width: 84.5%;
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   position: relative;
+}
+
+.horizontalCardWrapper .container .iconsBox button{
+   border: 1px solid #2c3e50;
+   color: #2c3e50;
+   background: #f2f3f4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 3px;
+   font-size: 19px;
+   border-radius: 50%;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.horizontalCardWrapper .container .iconsBox button:hover{
+   background: #e5e7e9;
+}
+
+.horizontalCardWrapper .container .iconsBox .nextIcon{
+   position: absolute;
+   left: -20px;
+   top: 48%;
+}
+
+.horizontalCardWrapper .container .iconsBox .prevIcon{
+   position: absolute;
+   right: -20px;
+   top: 48%;
+}
+
+.horizontalCardWrapper .container h2{
+   color: #2c3e50;
+   font-size: 19px;
+   font-weight: 500;
+}
+
+.horizontalCardWrapper .container .productCardCarusel{
+   display: flex;
+   gap: 20px;
+   overflow-x: auto;
+   transition: all;
+}
+
+.horizontalCardWrapper .container .productCardCarusel a{
+   text-decoration: none;
+}
+
+.horizontalCardWrapper .container .productCardCarusel .productCard{
+  display: flex;
+  border: 2px solid #f2f3f4;
+}
+
+.horizontalCardWrapper .productCardCarusel .imageBox{
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f3f4;
+  padding: 8px;
+}
+
+.horizontalCardWrapper .productCardCarusel .imageBox .productImage{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  mix-blend-mode: multiply;
+}
+
+.horizontalCardWrapper .productCardCarusel .imageBox .productImage:hover{
+   transform: scale(1.1);
+}
+
+.horizontalCardWrapper .productCardCarusel .productCard .aboutProduct{
+   background: #fff;
+   padding-left: 15px;
+   width: 205px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 5px;
+}
+
+.horizontalCardWrapper .productCardCarusel .productCard .aboutProduct h2{
+   width: 190px;
+   font-size: 16.5px;
+   font-weight: 600;
+   color: #2c3e50;
+}
+
+.horizontalCardWrapper .productCardCarusel .productCard .aboutProduct p{
+   color: #000;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.horizontalCardWrapper .productCard .aboutProduct .productCategory{
+   text-transform: capitalize;
+}
+
+.productCardCarusel .productCard .aboutProduct .pricesBox{
+   display: flex;
+   gap: 12px;
+}
+
+.productCardCarusel .productCard .aboutProduct .pricesBox .prevPrice{
+   text-decoration: line-through;
+   color: #505050;
+}
+
+.productCardCarusel .productCard .aboutProduct .pricesBox .sellingPrice{
+   color: #27ae60;
+}
+
+.productCard .aboutProduct .btnBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.productCard .aboutProduct .btnBox button{
+    font-size: 14px;
+    width: 126px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+}
+
+.productCard .aboutProduct .btnBox .basketBtn{
+    background: #2c3e50;
+}
+
+.productCard .aboutProduct .btnBox .basketBtn:hover{
+   background: #34495e;
+}
+
+.productCard .aboutProduct .btnBox .wishlistBtn{
+   background: #f39c12;
+}
+
+.productCard .aboutProduct .btnBox .wishlistBtn:hover{
+   background: #e67e22;
+}
+
+.horizontalCardWrapper .productCardCarusel .loadingCard{
+   border: 1px solid #ededee;
+   display: flex;
+}
+
+.horizontalCardWrapper .productCardCarusel .loadingCard .loadingCardLeft{
+   background: #ededed;
+   width: 150px;
+   height: 200px;
+   animation: pulse 1.5s infinite;
+}
+
+.horizontalCardWrapper .loadingCard .loadingCardRight{
+   background: #fff;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 12px;
+}
+
+.loadingCard .loadingCardRight .titlesBox{
+   width: 150px;
+   height: 26px;
+   background: #ededed;
+   border-radius: 12px;
+   animation: pulse 1.5s infinite;
+}
+
+.loadingCard .loadingCardRight .pricesBox{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.loadingCard .loadingCardRight .pricesBox p{
+   width: 150px;
+   height: 26px;
+   background: #ededed;
+   border-radius: 12px;
+   animation: pulse 1.5s infinite;
+}
+
+.loadingCard .loadingCardRight .btnBox .btn{
+   width: 70px;
+   height: 24px;
+   border-radius: 12px;
+   border: none;
+   outline: none;
+   background: #ededed;
+   animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+   0% {
+      transform: scale(1);
+      opacity: 1;
+   }
+   50% {
+      transform: scale(1.05);
+      opacity: 0.7;
+   }
+   100% {
+      transform: scale(1);
+      opacity: 1;
+   }
+}

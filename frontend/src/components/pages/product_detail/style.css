@@ -1,0 +1,273 @@
+.productDetailWrapper .container{
+  padding: 20px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productDetailWrapper .container .top{
+  display: flex;
+  gap: 30px;
+}
+
+.productDetailWrapper .container .productImageSide{
+  display: flex;
+  gap: 30px;
+}
+
+.productDetailWrapper .container .loadingSlideImgWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.container .loadingSlideImgWrapper .loadBox{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background: #e5e7e9;
+  animation: pulse 1s infinite;
+}
+
+.container .slideImgWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.container .slideImgWrapper .slideImgBox{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f3f4;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container .slideImgWrapper .slideImgBox .slideImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  cursor: pointer;
+}
+
+.container .loadMainImg{
+  width: 500px;
+  height: 500px;
+  background: #e5e7e9;
+  border-radius: 10px;
+  animation: pulse 1s infinite;
+}
+
+.container .mainImgBox img{
+  object-fit: cover;
+  width: 540px;
+  height: 510px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .productZoomImage{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 320px;
+  top: 96px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.container .mainImgBox img{
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  width: 470px;
+  height: 470px;
+}
+
+.container .productDetailsSide{
+  color: #3f3f3f;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container .productDetailsSide p{
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.container .productDetailsSide h2{
+  color: #16a085;
+  font-weight: 500;
+  font-size: 22px;
+  width: 560px;
+}
+
+.container .productDetailsSide .strsBox{
+  display: flex;
+  align-items: center;
+}
+
+.container .productDetailsSide .starsBox svg{
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.container .productDetailsSide .priceBox{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .productDetailsSide .priceBox .selPrice{
+   font-size: 21px;
+   color: #16a085;
+}
+
+.container .productDetailsSide .priceBox .prevPrice{
+  font-size: 21px;
+  text-decoration: line-through;
+}
+
+.container .productDetailsSide .btnBox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .productDetailsSide .btnBox button{
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 14.5px;
+}
+
+.container .productDetailsSide .btnBox .btn1{
+  background: #27ae60;
+}
+
+.container .productDetailsSide .btnBox .btn1:hover{
+  background: #16a085;
+}
+
+.container .productDetailsSide .btnBox .btn2{
+  background: #2980b9;
+}
+
+.container .productDetailsSide .btnBox .btn2:hover{
+  background: #3498db;
+}
+
+.container .productDetailsSide .descriptionBox .prodDescription{
+  font-weight: 400;
+  width: 460px;
+}
+
+.container .loadDetailsBox{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 30px;
+}
+
+.container .loadDetailsBox .loadBrandName,
+.container .loadDetailsBox .loadProductName{
+  width: 360px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #e5e7e9;
+  animation: pulse 1s infinite;
+}
+
+.container .loadDetailsBox .loadStarsBox{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .loadDetailsBox .loadStarsBox div{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e5e7e9;
+  animation: pulse 1s infinite;
+}
+
+.container .loadDetailsBox .loadPriceBox,
+.container .loadDetailsBox .loadBtnBox{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.container .loadDetailsBox .loadPriceBox div,
+.container .loadDetailsBox .loadBtnBox button{
+    width: 170px;
+    height: 36px;
+    border-radius: 10px;
+    background: #e5e7e9;
+    animation: pulse 1s infinite;
+}
+
+.container .loadDetailsBox .loadBtnBox button{
+  border: none;
+}
+
+.loadDetailsBox .loadDescriptionBox{
+    width: 360px;
+    height: 200px;
+    border-radius: 10px;
+    background: #e5e7e9;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+   0% {
+    transform: scale(1);
+    opacity: 1;
+   }
+   50% {
+    transform: scale(1.01);
+    opacity: 0.7;
+   }
+   100% {
+    transform: scale(1);
+    opacity: 1;
+   }
+}
+
+@media only screen and (min-width: 1095px) and (max-width: 1200px) {
+  .container .mainImgBox img{
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container .productZoomImage{
+     display: none;
+     visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1094px) {
+  .productDetailWrapper .container .top{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container .mainImgBox img{
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    width: 400px;
+    height: 400px;
+  }
+}

@@ -1,0 +1,103 @@
+.viewProductByCategoryWrapper .container{
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+
+.viewProductByCategoryWrapper .container .sidebarLoadingWrapper{
+  flex: 0.2;
+  background: #f4f5f7;
+  width: full;
+  height: full;
+}
+
+.viewProductByCategoryWrapper .container .sidebarWrapper{
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f4f5f7;
+  padding: 12px;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.viewProductByCategoryWrapper .container .sidebarWrapper .titleBox{
+  border-bottom: 1px solid #2c3e50;
+}
+
+.viewProductByCategoryWrapper .container .sidebarWrapper .titleBox h3{
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 2px;
+  color: #2c3e50;
+}
+
+.viewProductByCategoryWrapper .container .sidebarWrapper .formBox form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.viewProductByCategoryWrapper .container .sidebarWrapper .formBox form .row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.viewProductByCategoryWrapper .container .displayProductBox{
+  flex: 0.8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.viewProductByCategoryWrapper .container .displayProductBox .searchResult{
+  font-size: 19px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.viewProductByCategoryWrapper .container .displayProductBox .wrapper{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 84.5vh;
+  overflow-x: scroll;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1044px) {
+  .viewProductByCategoryWrapper .container .sidebarWrapper{
+    flex: 0.3;  
+  }
+
+  .viewProductByCategoryWrapper .container .sidebarLoadingWrapper{
+    flex: 0.3;  
+  }
+
+  .viewProductByCategoryWrapper .container .displayProductBox{
+    flex: 0.7;
+  }
+}
+
+@media screen and (max-width: 899px){
+  .viewProductByCategoryWrapper .container .sidebarWrapper{
+     flex: 0.4;
+  }
+
+  .viewProductByCategoryWrapper .container .sidebarLoadingWrapper{
+    flex: 0.4;  
+  }
+  
+  .viewProductByCategoryWrapper .container .displayProductBox{
+    flex: 0.6;
+    width: full;
+  }
+}

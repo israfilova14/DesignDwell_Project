@@ -1,0 +1,92 @@
+.signUpWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpWrapper .container{
+    border: 1px solid #3a3a3a;
+    width: 330px;
+    height: 470px;
+    border-radius: 9px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.signUpWrapper .container .userImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpWrapper .container .userImage img{
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+.signUpWrapper .container .aboutAccount p a{
+    color: #000;
+}
+
+.signUpWrapper .container .formBox form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formBox form .row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formBox form .row label{
+    font-size: 16px;
+}
+
+.formBox form .row .input-box {
+    border: 1px solid #3a3a3a;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formBox form .row  .input-box input{
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 15px;
+} 
+
+.formBox form .row  .input-box input::placeholder{
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+
+.formBox form .row .btnBox{
+   background: #f1c40f;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.formBox form .row .btnBox button{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.formBox form .row .btnBox:hover{
+    background: #f4d03f ;
+}
