@@ -1,4 +1,4 @@
-const backendDomen = "http://localhost:9010";
+const backendDomen = "https://mern-project-backend-0pbw.onrender.com";
 
 const SummaryApi = {
   signUp: {
