@@ -62,4 +62,6 @@ router.post("/add-to-favorite", authToken, addToFavoriteController);
 router.get("/view-favorite-product", authToken, addToFavoriteViewProduct);
 router.post("/delete-favorite-product", authToken, deleteFavoriteProductCart);
 router.get("/count-favorite-product", authToken, countFavoriteProduct);
+
+ 
 module.exports = router

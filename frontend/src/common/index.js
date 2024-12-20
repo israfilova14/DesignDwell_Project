@@ -1,5 +1,5 @@
 const backendDomen = "http://localhost:9010";
-
+ 
 const SummaryApi = {
   signUp: {
     url: `${backendDomen}/api/signup`,
@@ -104,6 +104,10 @@ const SummaryApi = {
   searchProduct: {
     url: `${backendDomen}/api/search`,
     method: "get"
+  },
+  payment: {
+    url: `${backendDomen}/api/checkout`,
+    method: "post"
   }
 }
 

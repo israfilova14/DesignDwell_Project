@@ -14,7 +14,7 @@ async function userLogout(req, res) {
     catch(err){
         console.error("Logout error:", err);
         return res.status(500).json({
-          message: "An error occured during logout",
+          message: "An error occurred during logout",
           error: true,
           success: false
         })

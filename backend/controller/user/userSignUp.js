@@ -48,7 +48,7 @@ async function userSignUpController(req, res) {
           message: "User created successfully!"
        })
     }catch(err){
-       // SEnd error response
+       // Send error response
        res.status(500).json({
         message: err?.message,
         error: true,
