@@ -27,7 +27,7 @@ const authorizeAdmin = (req, res, next) => {
       next()
    }
    else{
-      res.staus(401)
+      res.status(401)
       res.json({message: "Not authorized as an admin token"})
    }
 }

@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 
 const createToken = (res, userId) => {
    try{
-      if(!process.env.JWT_SECRET_KEY){
+      if(!process.env.TOKEN_SECRET_KEY){
           console.error("JWT_SECRET_KEY is missing in the environment variables")
           throw new Error("JWT_SECRET_KEY is required for generating token")
       }
@@ -10,14 +10,14 @@ const createToken = (res, userId) => {
       // Create JWT token
       const token = jwt.sign(
         {userId},
-        process.env.JWT_SECRET_KEY,
+        process.env.TOKEN_SECRET_KEY,
         {expiresIn: '10d'}
       )
 
       // Set JWT as an HTTP Only Cookie
       res.cookie('jwt', token, {
          httpOnly: true,
-         secure: process.env.TOKEN_SECRET_KEY === 'production',
+         secure: process.env.NODE_ENV === 'production',
          sameSite: 'strict',
          maxAge: 10 * 24 * 60 * 60 * 1000
       })
