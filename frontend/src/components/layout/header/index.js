@@ -90,7 +90,7 @@ const Header = () => {
                         )
                      }
                      {
-                        (user && user.role === 'GENERAL') && (
+                        (user) && (
                             <Link to={"/basket"}>
                                 <div className='icon_ icon'>
                                     <FiShoppingCart/>
@@ -104,7 +104,7 @@ const Header = () => {
                         )
                      }
                      {
-                        (user && user.role === 'GENERAL') && (
+                        (user) && (
                             <Link to={"/favorite"}>
                                 <div className='icon_'>
                                     <FaRegHeart/>

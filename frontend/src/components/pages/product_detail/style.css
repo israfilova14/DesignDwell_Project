@@ -271,3 +271,16 @@
     height: 400px;
   }
 }
+
+@media only screen and (max-width: 640px){
+  .container .slideImgWrapper{
+     display: none;
+  }
+  .productDetailWrapper .container{
+    padding: 5px;
+  }
+  .productDetailWrapper .container .productImageSide{
+    gap: 0px;
+  }
+  
+}

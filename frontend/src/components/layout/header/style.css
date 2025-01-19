@@ -171,12 +171,6 @@
     }
 }
 
-@media only screen and (max-width: 948px) {
-    .headerWrapper header .iconsBox .pop_up{
-        display: none;
-    }
-}
-
 @media only screen and (min-width: 640px) and (max-width: 949px) {
     .headerWrapper header{
         padding: 10px;
@@ -212,8 +206,8 @@
     }
     
     .headerWrapper header .iconsBox .icon_ {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
     }
 
     .headerWrapper header .iconsBox .icon_ svg{
@@ -235,5 +229,16 @@
     }
     .headerWrapper header .iconsBox .btnBox button{
         padding: 7px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .headerWrapper header{
+        padding: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 }

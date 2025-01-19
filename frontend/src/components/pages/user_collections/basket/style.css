@@ -267,13 +267,3 @@
     width: 390px;
   }
 }
-
-@media only screen and (max-width: 460px){
-  .basketWrapper .container .paymentWrapper .paymentBox{
-    display: none;
-  }
-
-  .basketWrapper .container .paymentWrapper .paymentLoadBox{
-    display: none;
-  }
-}

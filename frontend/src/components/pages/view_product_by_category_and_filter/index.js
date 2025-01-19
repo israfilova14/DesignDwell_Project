@@ -113,7 +113,6 @@ const ViewProductByCategoryAndFilter = () => {
     <div className='viewProductByCategoryWrapper'>
          <div className='container'>
              {/* left side */}
-               (
                <div className='sidebarWrapper'>
                   <div className='titleBox'>
                       <h3>Sort By</h3>
