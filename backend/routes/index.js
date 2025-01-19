@@ -31,7 +31,7 @@ const {authenticate , authorizeAdmin} = require('../middleware/authToken.js')
 // Users
 router.post("/signup", userSignUpController);
 router.post("/signin", userSignInController);
-router.get("/user-details", authenticate, authorizeAdmin, userDetailController);
+router.get("/user-details", authenticate, userDetailController);
 router.get("/userLogout", userLogout);
 
 // Admin Panel
