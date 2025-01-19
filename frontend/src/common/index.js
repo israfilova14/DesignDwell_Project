@@ -1,4 +1,4 @@
-const backendDomen = "http://localhost:9010";
+const backendDomen = "https://designdwell-project.onrender.com";
  
 const SummaryApi = {
   signUp: {
