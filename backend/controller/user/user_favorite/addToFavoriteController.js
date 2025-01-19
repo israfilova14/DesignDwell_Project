@@ -9,10 +9,10 @@ const addToFavoriteController = async(req, res) => {
         return res.status(401).json({
            message: "User not authenticated",
            success: false,
-           error: false
+           error: true
         })
      }
-
+     
      if(!productId){
        return res.status(400).json({
          message: "Product ID is required",
