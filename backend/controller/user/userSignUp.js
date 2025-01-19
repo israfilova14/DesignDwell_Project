@@ -1,5 +1,6 @@
 const userModel = require("../../models/userModel");
 const bcrypt = require("bcryptjs");
+const createToken = require('../../utilities/createToken.js');
 
 async function userSignUpController(req, res) {
     try{
@@ -39,6 +40,8 @@ async function userSignUpController(req, res) {
        // Save user to the database
        const userData = new userModel(payload);
        const saveUser = await userData.save();
+
+       createToken(res, saveUser._id)
 
        // Respond with success message
        res.status(201).json({

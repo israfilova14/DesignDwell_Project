@@ -1,40 +1,35 @@
-const jwt = require("jsonwebtoken");
+const jwt = require('jsonwebtoken')
+const userModel = require('../models/userModel.js')
 
-async function authToken(req, res, next){
-  try{
-   const token = req.cookies?.token;
-   // Check if token exists
-   if(!token){
-     return res.status(401).json({
-       message: "Please login",
-       error: true,
-       success: false
-     });
-   }
-
-   // Verify JWT 
-   jwt.verify(token, process.env.TOKEN_SECRET_KEY, (err, decoded) => {
-      if(err){
-         return res.status(403).json({
-            message: "Invalid or expired token",
-            error: true,
-            success: false
-         })
-      }
-      
-      req.user = req.user || {};
-      req.userId = decoded._id;
-
-      next()
-   })
-  }catch(err){
-     return res.status(500).json({
-       message: "An error occured during authentication",
-       error: true,
-       success: false,
-       details: err?.message
-     })
+const authenticate = async(req, res, next) => {
+  let token
+  // Read JWT from the 'jwt' cookie
+  token = req.cookies.jwt
+  if(token){
+     try{
+        // Verify token
+        const decoded = jwt.verify(token, process.env.TOKEN_SECRET_KEY)
+        req.user = await userModel.findById(decoded.userId).select('-password')
+        next()
+     }catch(error){
+        res.status(401)
+        res.json({message: 'Not authorized, token failed'})
+     }
+  }
+  else{
+      res.status(401)
+      res.json({message: 'Not authorized, no token'})
   }
 }
 
-module.exports = authToken
+const authorizeAdmin = (req, res, next) => {
+   if(req.user && req.user.isAdmin){
+      next()
+   }
+   else{
+      res.staus(401)
+      res.json({message: "Not authorized as an admin token"})
+   }
+}
+
+module.exports = {authenticate, authorizeAdmin}
