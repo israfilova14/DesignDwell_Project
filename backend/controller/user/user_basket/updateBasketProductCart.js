@@ -2,7 +2,7 @@ const basketProductCartModel = require("../../../models/basketProductCartModel")
 
 const updateBasketProductCart = async(req, res) => {
      try{
-       const currentUserId = req?.userId;
+       const currentUserId = req?.user?._id;
        const addToBasketProductId = req.body?._id;
        const qty = req.body.quantity;
 

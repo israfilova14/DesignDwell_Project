@@ -2,7 +2,7 @@ const favoriteProductCartModel = require("../../../models/favoriteProductCartMod
 
 const deleteFavoriteProductCart = async(req, res) => {
    try{
-     const currentUserId = req?.userId;
+     const currentUserId = req?.user?.id;
      const favoriteProductId = req.body._id;
 
      if(!currentUserId){

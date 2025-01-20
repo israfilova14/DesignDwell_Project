@@ -2,7 +2,7 @@ const basketProductCartModel = require("../../../models/basketProductCartModel")
 
 const deleteBasketProductCart = async(req, res) => {
    try{
-      const currentUserId = req?.userId;
+      const currentUserId = req?.user?._id;
       const addToBasketCartProductId = req.body._id;
 
       const deleteProduct = await basketProductCartModel.deleteOne({

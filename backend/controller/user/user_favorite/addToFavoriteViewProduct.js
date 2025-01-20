@@ -2,7 +2,7 @@ const favoriteProductCartModel = require("../../../models/favoriteProductCartMod
 
 const addToFavoriteViewProduct = async (req, res) => {
   try{
-     const currentUser = req?.userId;
+     const currentUser = req?.user?._id;
      const allFavoriteProducts = await favoriteProductCartModel.find({
         userId: currentUser
      }).populate("productId");

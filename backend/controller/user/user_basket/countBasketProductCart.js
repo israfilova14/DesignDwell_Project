@@ -2,7 +2,7 @@ const basketProductModel = require("../../../models/basketProductCartModel");
 
 const countBasketProductCart = async(req, res) => {
   try{
-     const userId = req.userId;
+     const userId = req?.user?._id;
      const count = await basketProductModel.countDocuments({
         userId: userId
      })   

@@ -2,7 +2,7 @@ const basketProductCartModel = require("../../../models/basketProductCartModel")
 
 const addToBasketViewProduct = async(req, res) => {
   try{
-    const currentUser = req?.userId;
+    const currentUser = req?.user._id;
     const allProduct = await basketProductCartModel.find({
         userId: currentUser
     }).populate("productId")

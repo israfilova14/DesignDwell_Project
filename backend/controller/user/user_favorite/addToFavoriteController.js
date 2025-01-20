@@ -3,7 +3,7 @@ const favoriteProductCartModel = require("../../../models/favoriteProductCartMod
 const addToFavoriteController = async(req, res) => {
    try{
      const {productId} = req.body;
-     const currentUser = req.userId;
+     const currentUser = req.user._id;
 
      if(!currentUser){
         return res.status(401).json({

@@ -2,7 +2,7 @@ const favoriteProductCartModel = require("../../../models/favoriteProductCartMod
 
 const countFavoriteProduct = async (req, res) => {
    try{
-     const userId = req?.userId;
+     const userId = req?.user._id;
      const count = await favoriteProductCartModel.countDocuments({
        userId: userId
      });
