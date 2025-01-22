@@ -41,7 +41,7 @@ const ViewProductByCategoryAndFilter = () => {
   }
 
   const handleSelectCategory = (e) => {
-    const {name, value, checked} = e.target;
+    const {value, checked} = e.target;
     setSelectCategory((prev) => {
        return{
          ...prev,

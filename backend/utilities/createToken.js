@@ -18,7 +18,7 @@ const createToken = (res, userId) => {
       res.cookie('jwt', token, {
          httpOnly: true,
          secure: process.env.NODE_ENV === 'production' || true,
-         sameSite: 'strict',
+         sameSite: 'None',
          maxAge: 10 * 24 * 60 * 60 * 1000
       })
 
